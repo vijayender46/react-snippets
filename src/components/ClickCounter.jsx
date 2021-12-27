@@ -8,6 +8,6 @@ export const ClickCounter = () => {
         <div className="section" data-test-id="counter-wrapper">
             <h1 data-test-id="count-display">0</h1>
             <button data-test-id="count-button">Click</button>
-        </div>
+        </div> 
     )
 } 
