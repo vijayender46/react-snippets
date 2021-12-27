@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ClassComponent } from "./components/ClassComponent";
+import { ClickCounter } from "./components/ClickCounter";
+import { FetchData } from "./components/FetchData";
 
-function App() {
+const App = () => {
+  const Page_Title = 'This is page title';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="text-center">
+        <h1>{Page_Title}</h1>
+      </section>
+      <section><ClassComponent /></section>
+      <section><FetchData /></section>
+      <section><ClickCounter /></section>
     </div>
   );
 }
-
+ 
 export default App;
